@@ -43,8 +43,8 @@
 	        this.growFactor = growFactor;
 	        this.r = 1;
 	        this.isfinished = false;
-	        //this.tanAngleA = Garden.random(-Garden.degrad(Garden.options.tanAngle), Garden.degrad(Garden.options.tanAngle));
-	        //this.tanAngleB = Garden.random(-Garden.degrad(Garden.options.tanAngle), Garden.degrad(Garden.options.tanAngle));
+	        this.tanAngleA = Garden.random(-Garden.degrad(Garden.options.tanAngle), Garden.degrad(Garden.options.tanAngle));
+	        this.tanAngleB = Garden.random(-Garden.degrad(Garden.options.tanAngle), Garden.degrad(Garden.options.tanAngle));
 	    }
 	    Petal.prototype = {
 	        draw: function () {
@@ -196,4 +196,5 @@
 			} else {
 				return Garden.rgba(r, g, b, a);
 			}
+
 	    };
